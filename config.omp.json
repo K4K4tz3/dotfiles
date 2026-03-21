@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "final_space": true,
+  "palette": {
+    "red": "#D05353"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+	{
+	  "type": "text",
+	  "template": "Katze"
+	},
+        {
+          "type": "text",
+          "style": "powerline",
+          "foreground": "#ffffff",
+  	  "template": " {{ .PWD }} "
+        },
+	{
+	  "type": "text",
+	  "style": "diamond",
+	  "leading_diamond": "\ue0b2",
+	  "trailing_diamond": "\ue0b0",
+	  "template": " {{ .PromptCount }} ",
+	  "background": "p:red"
+	}
+      ]
+    }
+  ]
+}
