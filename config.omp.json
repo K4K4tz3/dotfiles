@@ -2,30 +2,67 @@
   "version": 1,
   "final_space": true,
   "palette": {
-    "red": "#D05353"
+    "red": "#D05353",
+    "blue": "#2274A5",
+    "gray": "#2B303A"
   },
   "blocks": [
     {
       "type": "prompt",
       "alignment": "left",
       "segments": [
+	 {
+	   "type": "text",
+	   "template": "Test"
+	 }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
 	{
 	  "type": "text",
-	  "template": "Katze"
+	  "style": "diamond",
+	  "template": " Katze ",
+	  "leading_diamond": "\ue0b6",
+	  "trailing_diamond": "\ue0b0",
+	  "background": "p:red"
 	},
         {
           "type": "text",
-          "style": "powerline",
+          "style": "diamond",
+	  "trailing_diamond": "\ue0b0",
           "foreground": "#ffffff",
-  	  "template": " {{ .PWD }} "
+  	  "template": " {{ .Folder }}",
+	  "background": "p:blue"
         },
+	{
+	  "type": "git",
+	  "style": "diamond",
+	  "template": " {{ .Working.Unmerged }} {{ .Staging.Unmerged }} {{ .Upstream }} "
+	}
+      ]
+    },
+    {
+      "type": "rprompt",
+      "alignment": "right",
+      "segments": [
 	{
 	  "type": "text",
 	  "style": "diamond",
 	  "leading_diamond": "\ue0b2",
-	  "trailing_diamond": "\ue0b0",
-	  "template": " {{ .PromptCount }} ",
+	  "template": "\ue0b3 {{ .PromptCount }} \ue0b1 \ue0b3",
 	  "background": "p:red"
+	},
+	{
+	  "type": "text",
+	  "style": "diamond",
+	  "template": "Hello",
+	  "leading_diamond": "\ue0b2",
+	  "trailing_diamond": "\ue0b4",
+	  "background": "p:blue"
 	}
       ]
     }
