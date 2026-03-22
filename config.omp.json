@@ -2,9 +2,10 @@
   "version": 1,
   "final_space": true,
   "palette": {
-    "red": "#D05353",
+    "red": "#E3655B",
     "blue": "#2274A5",
-    "gray": "#2B303A"
+    "gray": "#2B303A",
+		"lightgray": "#D9D9D9"
   },
   "blocks": [
     {
@@ -13,58 +14,71 @@
       "segments": [
     		{
       		"type": "text",
+					"foreground": "p:lightgray",
 	  			"template": "⣿⡟⠙⠛⠋⠩⠭⣉⡛⢛⠫⠭⠄⠒⠄⠄⠄⠈⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
 				},
 				{
 					"type": "text",
+					"foreground": "p:lightgray",
 	  			"template": "\n⣿⡇⠄⠄⠄⠄⣠⠖⠋⣀⡤⠄⠒⠄⠄⠄⠄⠄⠄⠄⠄⣈⡭⠭⠄⠄⠄⠉⠙"
 				},
 				{
-      		"type": "text",
-	  			"template": "\n⣿⡇⠄⠄⢀⣞⣡⠴⠚⠁⠄⠄⢀⠠⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄"
+      		"type": "os",
+					"foreground": "p:lightgray",
+	  			"template": "\n⣿⡇⠄⠄⢀⣞⣡⠴⠚⠁⠄⠄⢀⠠⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄         \uE62A  Windows"
 				},
 				{
       		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣿⡇⠄⡴⠁⡜⣵⢗⢀⠄⢠⡔⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄"
 				},
 				{
-      		"type": "text",
-      		"template": "\n⣿⡇⡜⠄⡜⠄⠄⠄⠉⣠⠋⠠⠄⢀⡄⠄⠄⣠⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸"
+      		"type": "sysinfo",
+					"foreground": "p:lightgray",
+      		"template": "\n⣿⡇⡜⠄⡜⠄⠄⠄⠉⣠⠋⠠⠄⢀⡄⠄⠄⣠⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸         RAM: {{ .PhysicalPercentUsed }}% "
 				},
 				{
       		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣿⠸⠄⡼⠄⠄⠄⠄⢰⠁⠄⠄⠄⠈⣀⣠⣬⣭⣛⠄⠁⠄⡄⠄⠄⠄⠄⠄⢀⣿"
 				},
 				{
       		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣏⠄⢀⠁⠄⠄⠄⠄⠇⢀⣠⣴⣶⣿⣿⣿⣿⣿⣿⡇⠄⠄⡇⠄⠄⠄⠄⢀⣾⣿"
 				},
 				{
       		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣿⣸⠈⠄⠄⠰⠾⠴⢾⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⢁⣾⢀⠁⠄⠄⠄⢠⢸⣿⣿"
 				},
 				{
-      		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣿⣿⣆⠄⠆⠄⣦⣶⣦⣌⣿⣿⣿⣿⣷⣋⣀⣈⠙⠛⡛⠌⠄⠄⠄⠄⢸⢸⣿⣿"
 				},
 				{
       		"type": "text",
+					"foreground": "p:lightgray",
     			"template": "\n⣿⣿⣿⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠈⠄⠄⠄⠄⠄⠈⢸⣿⣿"
 				},
 				{
       		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣿⣿⣿⠄⠄⠄⠘⣿⣿⣿⡆⢀⣈⣉⢉⣿⣿⣯⣄⡄⠄⠄⠄⠄⠄⠄⠄⠈⣿⣿"
 				},
 				{
       		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣿⣿⡟⡜⠄⠄⠄⠄⠙⠿⣿⣧⣽⣍⣾⣿⠿⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠃⢿⣿"
 				},
 				{ 
       		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣿⡿⠰⠄⠄⠄⠄⠄⠄⠄⠄⠈⠉⠩⠔⠒⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠐⠘⣿"
 				},
 				{
       		"type": "text",
+					"foreground": "p:lightgray",
       		"template": "\n⣿⠃⠃⠄⠄⠄⠄⠄⠄⣀⢀⠄⠄⡀⡀⢀⣤⣴⣤⣤⣀⣀⠄⠄⠄⠄⠄⠄⠁⢹\n"
 				}
       ]
@@ -78,6 +92,7 @@
 	  		"type": "text",
 	  		"style": "diamond",
 	  		"template": " Katze ",
+				"foreground": "p:lightgray",
 	  		"leading_diamond": "\ue0b6",
 	  		"trailing_diamond": "\ue0b0",
 	  		"background": "p:red"
@@ -91,9 +106,9 @@
 	  		"background": "p:blue"
     	},
 			{
-	  		"type": "git",
-	  		"style": "diamond",
-	  		"template": " \uF044 {{ .Working.Unmerged }} {{ .Staging.Unmerged }} {{ .Upstream }} "
+				"type": "git",
+				"style": "powerline",
+				"template": " {{ .HEAD }}{{ .PushAhead }} "
 			}
     ]
     },
