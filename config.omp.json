@@ -43,14 +43,16 @@
       		"template": "\n⣿⠸⠄⡼⠄⠄⠄⠄⢰⠁⠄⠄⠄⠈⣀⣠⣬⣭⣛⠄⠁⠄⡄⠄⠄⠄⠄⠄⢀⣿"
 				},
 				{
-      		"type": "text",
+      		"type": "time",
+					"style": "plain",
 					"foreground": "p:lightgray",
-      		"template": "\n⣏⠄⢀⠁⠄⠄⠄⠄⠇⢀⣠⣴⣶⣿⣿⣿⣿⣿⣿⡇⠄⠄⡇⠄⠄⠄⠄⢀⣾⣿"
+      		"template": "\n⣏⠄⢀⠁⠄⠄⠄⠄⠇⢀⣠⣴⣶⣿⣿⣿⣿⣿⣿⡇⠄⠄⡇⠄⠄⠄⠄⢀⣾⣿        {{ .CurrentDate.Day }} {{ .CurrentDate.Month }} - {{ .CurrentDate.Weekday }}   "
 				},
 				{
-      		"type": "text",
+      		"type": "time",
+					"style": "plain",
 					"foreground": "p:lightgray",
-      		"template": "\n⣿⣸⠈⠄⠄⠰⠾⠴⢾⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⢁⣾⢀⠁⠄⠄⠄⢠⢸⣿⣿"
+      		"template": "\n⣿⣸⠈⠄⠄⠰⠾⠴⢾⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⢁⣾⢀⠁⠄⠄⠄⢠⢸⣿⣿            {{ .CurrentDate.Year }} "
 				},
 				{
 					"foreground": "p:lightgray",
@@ -108,7 +110,12 @@
 			{
 				"type": "git",
 				"style": "powerline",
-				"template": " {{ .HEAD }}{{ .PushAhead }} "
+				"options": {
+					"fetch_status": true,
+					"fetch_push_status": true,
+					"fetch_bare_info": true
+				},
+				"template": " {{ .HEAD }} {{ .BranchStatus }}  "
 			}
     ]
     },
