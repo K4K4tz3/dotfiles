@@ -1,18 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-    "darkGray": "#726E75",
-    "black": "#253237",
-    "blue": "#6622CC",
-    "gray": "#2D2A2E",
-    "lightgray": "#D9D9D9",
-    "red": "#960200",
-    "white": "#F1F7ED",
-    "yellow": "#C2A83E",
-    "gs_green": "#697A21",
+		"base_text": "#",
+		"base_dotImage": "#F1F7ED",
+		"base_red": "#960200",
+		"base_redGray": "#BF3E30",
+		"base_gray": "#726E75",
+
+    "gs_green": "#C5E063",
     "gs_yellow": "#FFCB47",
-    "gs_red": "#F06449",
-    "gs_blue": "#477998"
+    "gs_red": "#F23D29",
+    "gs_blue": "#4BD6E6"
   },
   "blocks": [
     {
@@ -21,73 +19,73 @@
       "segments": [
         {
           "template": "\u28ff\u285f\u2819\u281b\u280b\u2829\u282d\u28c9\u285b\u289b\u282b\u282d\u2804\u2812\u2804\u2804\u2804\u2808\u2809\u281b\u28bf\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         },
         {
           "template": "\n\u28ff\u2847\u2804\u2804\u2804\u2804\u28e0\u2816\u280b\u28c0\u2864\u2804\u2812\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u28c8\u286d\u282d\u2804\u2804\u2804\u2809\u2819",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         },
         {
           "template": "\n\u28ff\u2847\u2804\u2804\u2880\u28de\u28e1\u2834\u281a\u2801\u2804\u2804\u2880\u2820\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2809\u2804\u2804\u2804\u2804\u2804\u2804\u2804         \ue62a  Windows",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "os"
         },
         {
           "template": "\n\u28ff\u2847\u2804\u2874\u2801\u285c\u28f5\u2897\u2880\u2804\u28a0\u2854\u2801\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         },
         {
           "template": "\n\u28ff\u2847\u285c\u2804\u285c\u2804\u2804\u2804\u2809\u28e0\u280b\u2820\u2804\u2880\u2844\u2804\u2804\u28e0\u28c6\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u28b8         RAM: {{ .PhysicalPercentUsed }}% ",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "sysinfo"
         },
         {
           "template": "\n\u28ff\u2838\u2804\u287c\u2804\u2804\u2804\u2804\u28b0\u2801\u2804\u2804\u2804\u2808\u28c0\u28e0\u28ec\u28ed\u28db\u2804\u2801\u2804\u2844\u2804\u2804\u2804\u2804\u2804\u2880\u28ff",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         },
         {
           "template": "\n\u28cf\u2804\u2880\u2801\u2804\u2804\u2804\u2804\u2807\u2880\u28e0\u28f4\u28f6\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u2847\u2804\u2804\u2847\u2804\u2804\u2804\u2804\u2880\u28fe\u28ff        {{ .CurrentDate.Day }} {{ .CurrentDate.Month }} - {{ .CurrentDate.Weekday }}   ",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "time",
           "style": "plain"
         },
         {
           "template": "\n\u28ff\u28f8\u2808\u2804\u2804\u2830\u283e\u2834\u28be\u28fb\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u2881\u28fe\u2880\u2801\u2804\u2804\u2804\u28a0\u28b8\u28ff\u28ff            {{ .CurrentDate.Year }} ",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "time",
           "style": "plain"
         },
         {
           "template": "\n\u28ff\u28ff\u28c6\u2804\u2806\u2804\u28e6\u28f6\u28e6\u28cc\u28ff\u28ff\u28ff\u28ff\u28f7\u28cb\u28c0\u28c8\u2819\u281b\u285b\u280c\u2804\u2804\u2804\u2804\u28b8\u28b8\u28ff\u28ff",
-          "foreground": "p:white"
+          "foreground": "p:base_dotImage"
         },
         {
           "template": "\n\u28ff\u28ff\u28ff\u2804\u2804\u2804\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u28ff\u2807\u2808\u2804\u2804\u2804\u2804\u2804\u2808\u28b8\u28ff\u28ff",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         },
         {
           "template": "\n\u28ff\u28ff\u28ff\u2804\u2804\u2804\u2818\u28ff\u28ff\u28ff\u2846\u2880\u28c8\u28c9\u2889\u28ff\u28ff\u28ef\u28c4\u2844\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2808\u28ff\u28ff",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         },
         {
           "template": "\n\u28ff\u28ff\u285f\u285c\u2804\u2804\u2804\u2804\u2819\u283f\u28ff\u28e7\u28fd\u28cd\u28fe\u28ff\u283f\u281b\u2801\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2803\u28bf\u28ff",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         },
         {
           "template": "\n\u28ff\u287f\u2830\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2808\u2809\u2829\u2814\u2812\u2809\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2804\u2810\u2818\u28ff",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         },
         {
           "template": "\n\u28ff\u2803\u2803\u2804\u2804\u2804\u2804\u2804\u2804\u28c0\u2880\u2804\u2804\u2840\u2840\u2880\u28e4\u28f4\u28e4\u28e4\u28c0\u28c0\u2804\u2804\u2804\u2804\u2804\u2804\u2801\u28b9\n",
-          "foreground": "p:white",
+          "foreground": "p:base_dotImage",
           "type": "text"
         }
       ]
@@ -97,134 +95,135 @@
       "alignment": "left",
       "segments": [
         {
-	  "type": "text",
-	  "style": "diamond",
+					"type": "text",
+	  			"style": "diamond",
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b0",
           "template": " Katze ",
-	  "foreground": "p:white",
-	  "background": "p:red"
+	  			"foreground": "p:base_text",
+	  			"background": "p:base_red"
         },
         {
-	  "type": "text",
-	  "style": "diamond",
+	  			"type": "text",
+	  			"style": "diamond",
           "template": " {{ .Folder }}",
-          "foreground": "p:white",
-          "background": "p:blue"
+          "foreground": "p:base_text",
+          "background": "p:base_redGray"
         },
-	{
-	  "type": "text",
-	  "style": "diamond",
-	  "template": "\ue0b0",
-	  "foreground": "p:blue",
-	  "background": "transparent"
-	},
-	{
-	  "type": "text",
-	  "style": "diamond",
-	  "foreground": "transparent",
-	  "background": "p:darkGray",
-	  "template": "\ue0b0"
-	},
+				{
+	  			"type": "text",
+					"style": "diamond",
+					"template": "\ue0b0",
+					"foreground": "p:base_redGray",
+					"background": "transparent"
+				},
+				{
+					"type": "text",
+					"style": "diamond",
+					"foreground": "transparent",
+					"background": "p:base_gray",
+					"template": "\ue0b0"
+				},
         {
-	  "type": "git",
-	  "style": "powerline",
+					"type": "git",
+					"style": "powerline",
           "foreground": "black",
-          "background": "p:darkGray",
-	  "template": " {{ .HEAD }}",
-	  "properties": {
-	    "fetch_status": true
-	  }
-
+          "background": "p:base_gray",
+					"template": " {{ .HEAD }}",
+					"properties": {
+						"fetch_status": true
+	  			}
         },
         {
-	  "type": "git",
-	  "style": "powerline",
+					"type": "git",
+					"style": "powerline",
           "foreground": "black",
-          "background": "p:darkGray",
-	  "template": " {{ .BranchStatus }}",
-	  "properties": {
-	    "fetch_status": true
-	  }
-
+          "background": "p:base_gray",
+					"template": " {{ .BranchStatus }}",
+					"properties": {
+						"fetch_status": true
+					}
         },
         {
-	  "type": "git",
-	  "style": "powerline",
+					"type": "git",
+					"style": "powerline",
           "foreground": "black",
-          "background": "p:darkGray",
-	  "template": "{{ if gt .Staging.Added 0 }} +{{ .Working.Added }}/{{ .Staging.Added }} {{ else }} +{{ .Working.Added }} {{ end }}",
-	  "foreground_templates": [
-		  "{{ if gt .Working.Added 0 }}p:gs_green{{ else if gt .Staging.Added 0 }}p:gs_green{{ else }}p:black{{ end }}"
-	  ],
-	  "properties": {
-	    "fetch_status": true
-	  }
+          "background": "p:base_gray",
+					"template": "{{ if gt .Staging.Added 0 }} +{{ .Working.Added }}/{{ .Staging.Added }} {{ else }} +{{ .Working.Added }} {{ end }}",
+					"foreground_templates": [
+						"{{ if gt .Working.Added 0 }}p:gs_green{{ else if gt .Staging.Added 0 }}p:gs_green{{ else }}black{{ end }}"
+					],
+					"properties": {
+						"fetch_status": true
+					}
         },
         {
-	  "type": "git",
-	  "style": "powerline",
+					"type": "git",
+					"style": "powerline",
           "foreground": "black",
-          "background": "p:darkGray",
-	  "template": "{{ if gt .Staging.Deleted 0 }} -{{ .Working.Deleted }}/{{ .Staging.Deleted }} {{ else }} -{{ .Working.Deleted }} {{ end }}",
-	  "foreground_templates": [
-		  "{{ if gt .Working.Deleted 0 }}p:gs_red{{ else if gt .Staging.Deleted 0 }}p:gs_red{{ else }}p:black{{ end }}"
-	  ],
-	  "properties": {
-	    "fetch_status": true
-	  }
+          "background": "p:base_gray",
+					"template": "{{ if gt .Staging.Deleted 0 }} -{{ .Working.Deleted }}/{{ .Staging.Deleted }} {{ else }} -{{ .Working.Deleted }} {{ end }}",
+					"foreground_templates": [
+						"{{ if gt .Working.Deleted 0 }}p:gs_red{{ else if gt .Staging.Deleted 0 }}p:gs_red{{ else }}black{{ end }}"
+					],
+					"properties": {
+						"fetch_status": true
+					}
         },
         {
-	  "type": "git",
+					"type": "git",
           "style": "powerline",
           "foreground": "black",
-          "background": "p:darkGray",
-	  "template": "{{ if gt .Staging.Modified 0 }} ~{{ .Working.Modified }}/{{ .Staging.Modified }} {{ else }} ~{{ .Working.Modified }} {{ end }}",
-	  "foreground_templates": [
-		  "{{ if gt .Working.Modified 0 }}p:gs_yellow{{ else if gt .Staging.Modified 0 }}p:gs_yellow{{ else }}p:black{{ end }}"
-	  ],
-	  "properties": {
-	    "fetch_status": true
-	  }
+          "background": "p:base_gray",
+					"template": "{{ if gt .Staging.Modified 0 }} ~{{ .Working.Modified }}/{{ .Staging.Modified }} {{ else }} ~{{ .Working.Modified }} {{ end }}",
+					"foreground_templates": [
+						"{{ if gt .Working.Modified 0 }}p:gs_yellow{{ else if gt .Staging.Modified 0 }}p:gs_yellow{{ else }}black{{ end }}"
+					],
+					"properties": {
+						"fetch_status": true
+					}
         },
         {
-	  "type": "git",
+					"type": "git",
           "style": "powerline",
-	  "foreground": "black",
-          "background": "p:darkGray",
-	  "template": " {{ .Working.Untracked }}? ",
-	  "foreground_templates": [
-		  "{{ if gt .Working.Untracked 0 }}p:gs_blue{{ else }}p:black{{ end }}"
-	  ],
-	  "properties": {
-	    "fetch_status": true
-	  }
+					"foreground": "black",
+          "background": "p:base_gray",
+					"template": " {{ .Working.Untracked }}? ",
+					"foreground_templates": [
+						"{{ if gt .Working.Untracked 0 }}p:gs_blue{{ else }}black{{ end }}"
+					],
+					"properties": {
+						"fetch_status": true
+					}
         },
-	{
-	  "type": "text",
-	  "style": "diamond",
-	  "template": "\ue0b0",
-	  "foreground": "p:darkGray",
-	  "background": "transparent"
-	},
-	{
-	  "type": "text",
-	  "style": "diamond",
-	  "template": "\ue0b0",
-	  "foreground": "transparent",
-	  "background_templates": [
-		"{{ if eq .Code 0}}p:gs_green{{ else }}p:gs_red{{ end }}"
-	  ]
-	},
-	{
-	  "type": "text",
-	  "style": "diamond",
-	  "trailing_diamond": "\ue0b0",
-	  "template": " {{ if eq .Code 0 }}\uf00c{{ else }}\uf071{{ end }} ",
-	  "background_templates": [
-		  "{{ if eq .Code 0 }}p:gs_green{{ else }}p:gs_red{{ end }}"
-	  ]
-	}
+				{
+					"type": "text",
+					"style": "diamond",
+					"template": "\ue0b0",
+					"foreground": "p:base_gray",
+					"background": "transparent"
+				},
+				{
+					"type": "text",
+					"style": "diamond",
+					"template": "\ue0b0",
+					"foreground": "transparent",
+					"background_templates": [
+					"{{ if eq .Code 0}}p:gs_green{{ else }}p:gs_red{{ end }}"
+					]
+				},
+				{
+					"type": "text",
+					"style": "diamond",
+					"trailing_diamond": "\ue0b0",
+					"template": " {{ .Code }} {{ if eq .Code 0 }}\uf00c{{ else }}\uf071{{ end }} ",
+					"foreground_templates": [
+						"{{ if eq .Code 0 }}black{{ else }}white{{ end }}"
+					],
+					"background_templates": [
+						"{{ if eq .Code 0 }}p:gs_green{{ else }}p:gs_red{{ end }}"
+					]
+				}
       ],
       "newline": true
     },
@@ -235,8 +234,8 @@
         {
           "leading_diamond": "\ue0b2",
           "template": "\ue0b3 {{ .PromptCount }} \ue0b1 \ue0b3",
-          "foreground": "p:white",
-          "background": "p:red",
+          "foreground": "p:base_text",
+          "background": "p:base_gray",
           "type": "text",
           "style": "diamond"
         },
@@ -244,8 +243,8 @@
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b4",
           "template": "Hello",
-          "foreground": "p:white",
-          "background": "p:blue",
+          "foreground": "p:base_text",
+          "background": "p:base_red",
           "type": "text",
           "style": "diamond"
         }
