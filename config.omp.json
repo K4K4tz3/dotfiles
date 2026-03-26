@@ -2,10 +2,14 @@
   "version": 1,
   "final_space": true,
   "palette": {
-    "red": "#E3655B",
-    "blue": "#2274A5",
-    "gray": "#2B303A",
-		"lightgray": "#D9D9D9"
+    "red": "#E55934",
+    "blue": "#068D9D",
+    "gray": "#2D2A2E",
+		"yellow": "#C2A83E",
+		"lightgray": "#D9D9D9",
+		"white": "#F1F7ED",
+		"beige": "#ECE4B7",
+		"black": "#253237"
   },
   "blocks": [
     {
@@ -14,73 +18,73 @@
       "segments": [
     		{
       		"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
 	  			"template": "⣿⡟⠙⠛⠋⠩⠭⣉⡛⢛⠫⠭⠄⠒⠄⠄⠄⠈⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
 				},
 				{
 					"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
 	  			"template": "\n⣿⡇⠄⠄⠄⠄⣠⠖⠋⣀⡤⠄⠒⠄⠄⠄⠄⠄⠄⠄⠄⣈⡭⠭⠄⠄⠄⠉⠙"
 				},
 				{
       		"type": "os",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
 	  			"template": "\n⣿⡇⠄⠄⢀⣞⣡⠴⠚⠁⠄⠄⢀⠠⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄         \uE62A  Windows"
 				},
 				{
       		"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⡇⠄⡴⠁⡜⣵⢗⢀⠄⢠⡔⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄"
 				},
 				{
       		"type": "sysinfo",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⡇⡜⠄⡜⠄⠄⠄⠉⣠⠋⠠⠄⢀⡄⠄⠄⣠⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸         RAM: {{ .PhysicalPercentUsed }}% "
 				},
 				{
       		"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⠸⠄⡼⠄⠄⠄⠄⢰⠁⠄⠄⠄⠈⣀⣠⣬⣭⣛⠄⠁⠄⡄⠄⠄⠄⠄⠄⢀⣿"
 				},
 				{
       		"type": "time",
 					"style": "plain",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣏⠄⢀⠁⠄⠄⠄⠄⠇⢀⣠⣴⣶⣿⣿⣿⣿⣿⣿⡇⠄⠄⡇⠄⠄⠄⠄⢀⣾⣿        {{ .CurrentDate.Day }} {{ .CurrentDate.Month }} - {{ .CurrentDate.Weekday }}   "
 				},
 				{
       		"type": "time",
 					"style": "plain",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⣸⠈⠄⠄⠰⠾⠴⢾⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⢁⣾⢀⠁⠄⠄⠄⢠⢸⣿⣿            {{ .CurrentDate.Year }} "
 				},
 				{
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⣿⣆⠄⠆⠄⣦⣶⣦⣌⣿⣿⣿⣿⣷⣋⣀⣈⠙⠛⡛⠌⠄⠄⠄⠄⢸⢸⣿⣿"
 				},
 				{
       		"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
     			"template": "\n⣿⣿⣿⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠈⠄⠄⠄⠄⠄⠈⢸⣿⣿"
 				},
 				{
       		"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⣿⣿⠄⠄⠄⠘⣿⣿⣿⡆⢀⣈⣉⢉⣿⣿⣯⣄⡄⠄⠄⠄⠄⠄⠄⠄⠈⣿⣿"
 				},
 				{
       		"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⣿⡟⡜⠄⠄⠄⠄⠙⠿⣿⣧⣽⣍⣾⣿⠿⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠃⢿⣿"
 				},
 				{ 
       		"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⡿⠰⠄⠄⠄⠄⠄⠄⠄⠄⠈⠉⠩⠔⠒⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠐⠘⣿"
 				},
 				{
       		"type": "text",
-					"foreground": "p:lightgray",
+					"foreground": "p:white",
       		"template": "\n⣿⠃⠃⠄⠄⠄⠄⠄⠄⣀⢀⠄⠄⡀⡀⢀⣤⣴⣤⣤⣀⣀⠄⠄⠄⠄⠄⠄⠁⢹\n"
 				}
       ]
@@ -94,7 +98,7 @@
 	  		"type": "text",
 	  		"style": "diamond",
 	  		"template": " Katze ",
-				"foreground": "p:lightgray",
+					"foreground": "p:white",
 	  		"leading_diamond": "\ue0b6",
 	  		"trailing_diamond": "\ue0b0",
 	  		"background": "p:red"
@@ -103,19 +107,21 @@
       	"type": "text",
       	"style": "diamond",
 	  		"trailing_diamond": "\ue0b0",
-      	"foreground": "#ffffff",
+				"foreground": "p:white",
   	  	"template": " {{ .Folder }}",
 	  		"background": "p:blue"
     	},
 			{
 				"type": "git",
 				"style": "powerline",
+				"background": "p:beige",
+				"foreground": "black",
 				"options": {
 					"fetch_status": true,
 					"fetch_push_status": true,
 					"fetch_bare_info": true
 				},
-				"template": " {{ .HEAD }} {{ .BranchStatus }}  "
+				"template": "<#2D2A2E,#ECE4B7>\ue0b0 {{ .HEAD }} {{ .BranchStatus }} <#157F1F>+{{ .Working.Added }} <#9E2B25>-{{ .Working.Deleted }} <#FF7F11>~{{ .Working.Modified }} <#02A9EA>{{ .Working.Untracked }}? <#ECE4B7,#2D2A2E>\ue0b0"
 			}
     ]
     },
@@ -126,12 +132,14 @@
 				{
 					"type": "text",
 					"style": "diamond",
+					"foreground": "p:white",
 					"leading_diamond": "\ue0b2",
 					"template": "\ue0b3 {{ .PromptCount }} \ue0b1 \ue0b3",
 					"background": "p:red"
 				},
 				{
 					"type": "text",
+					"foreground": "p:white",
 					"style": "diamond",
 					"template": "Hello",
 					"leading_diamond": "\ue0b2",
