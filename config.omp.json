@@ -153,9 +153,9 @@
 	  "style": "powerline",
           "foreground": "black",
           "background": "p:darkGray",
-	  "template": " +{{ .Working.Added }}",
+	  "template": "{{ if gt .Staging.Added 0 }} +{{ .Working.Added }}/{{ .Staging.Added }} {{ else }} +{{ .Working.Added }} {{ end }}",
 	  "foreground_templates": [
-		  "{{ if eq .Working.Added }}p:black{{ else }}p:gs_green{{ end }}"
+		  "{{ if gt .Working.Added 0 }}p:gs_green{{ else if gt .Staging.Added 0 }}p:gs_green{{ else }}p:black{{ end }}"
 	  ],
 	  "properties": {
 	    "fetch_status": true
@@ -166,9 +166,9 @@
 	  "style": "powerline",
           "foreground": "black",
           "background": "p:darkGray",
-	  "template": " -{{ .Working.Deleted }}",
+	  "template": "{{ if gt .Staging.Deleted 0 }} -{{ .Working.Deleted }}/{{ .Staging.Deleted }} {{ else }} -{{ .Working.Deleted }} {{ end }}",
 	  "foreground_templates": [
-		  "{{ if eq .Working.Deleted 0 }}p:black{{ else }}p:gs_red{{ end }}"
+		  "{{ if gt .Working.Deleted 0 }}p:gs_red{{ else if gt .Staging.Deleted 0 }}p:gs_red{{ else }}p:black{{ end }}"
 	  ],
 	  "properties": {
 	    "fetch_status": true
@@ -179,9 +179,9 @@
           "style": "powerline",
           "foreground": "black",
           "background": "p:darkGray",
-	  "template": " ~{{ .Working.Modified }}",
+	  "template": "{{ if gt .Staging.Modified 0 }} ~{{ .Working.Modified }}/{{ .Staging.Modified }} {{ else }} ~{{ .Working.Modified }} {{ end }}",
 	  "foreground_templates": [
-		  "{{ if eq .Working.Modified 0 }}p:black{{ else }}p:gs_yellow{{ end }}"
+		  "{{ if gt .Working.Modified 0 }}p:gs_yellow{{ else if gt .Staging.Modified 0 }}p:gs_yellow{{ else }}p:black{{ end }}"
 	  ],
 	  "properties": {
 	    "fetch_status": true
@@ -194,7 +194,7 @@
           "background": "p:darkGray",
 	  "template": " {{ .Working.Untracked }}? ",
 	  "foreground_templates": [
-		  "{{ if eq .Working.Untracked 0 }}p:black{{ else }}p:gs_blue{{ end }}"
+		  "{{ if gt .Working.Untracked 0 }}p:gs_blue{{ else }}p:black{{ end }}"
 	  ],
 	  "properties": {
 	    "fetch_status": true
@@ -206,6 +206,24 @@
 	  "template": "\ue0b0",
 	  "foreground": "p:darkGray",
 	  "background": "transparent"
+	},
+	{
+	  "type": "text",
+	  "style": "diamond",
+	  "template": "\ue0b0",
+	  "foreground": "transparent",
+	  "background_templates": [
+		"{{ if eq .Code 0}}p:gs_green{{ else }}p:gs_red{{ end }}"
+	  ]
+	},
+	{
+	  "type": "text",
+	  "style": "diamond",
+	  "trailing_diamond": "\ue0b0",
+	  "template": " {{ if eq .Code 0 }}\uf00c{{ else }}\uf071{{ end }} ",
+	  "background_templates": [
+		  "{{ if eq .Code 0 }}p:gs_green{{ else }}p:gs_red{{ end }}"
+	  ]
 	}
       ],
       "newline": true
