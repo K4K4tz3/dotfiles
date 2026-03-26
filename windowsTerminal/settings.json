@@ -43,7 +43,8 @@
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell"
+                "name": "Windows PowerShell",
+		"backgroundImage": "C:\\Users\\JoshuaWolff\\Documents\\dotfiles\\images\\terminal_background_blur40.png"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
